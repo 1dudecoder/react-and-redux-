@@ -1,0 +1,50 @@
+.mycontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    margin-top: 6rem;
+    margin-left: 19rem;
+}
+
+img{
+    height: 20rem;
+    width: fit-content;
+    margin-top: 150px
+}
+
+.container{
+    margin-top: auto;
+    width: 0rem;
+    margin-left: 40px;
+}
+
+
+.Title{
+    font-size: xx-large;
+    font-family: auto;
+    color: revert;
+    width: 500px;
+}
+
+.category{
+    font-size: medium;
+    font-family: fantasy;
+    color: red;
+    width: 200px;
+
+}
+
+.Description{
+    font-size: medium;
+    font-family: monospace;
+    color: black;
+    width: 500px;
+}
+
+.Price{
+    font-size: x-large;
+    font-family: fantasy;
+    color: rebeccapurple;
+}
