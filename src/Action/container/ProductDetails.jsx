@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
-import { singleproduct } from '../actions';
+import { fetchproduct } from '../actions';
 import "./ProductComponent.css"
 
 function ProductDetails() {
@@ -11,14 +11,13 @@ function ProductDetails() {
     const { id,title,price,description,category,image } = useSelector((state) => state.allproducts.products);
     console.log(id);
 
-    const FetchProductData = async () => {
-        const responsedata = await axios.get(`https://fakestoreapi.com/products/${productid}`).catch(err => console.log("Error",err))
-        dispatch(singleproduct(responsedata.data));
-    }
+    // const FetchProductData = async () => {
+    //     const responsedata = await axios.get(`https://fakestoreapi.com/products/${productid}`).catch(err => console.log("Error",err))
+    //     dispatch(singleproduct(responsedata.data));
+    // }
 
     useEffect(()=>{
-        FetchProductData();
-        
+        dispatch(fetchproduct(productid));
     },[])
 
 

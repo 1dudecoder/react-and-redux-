@@ -8,6 +8,12 @@
     margin-left: 19rem;
 }
 
+.card{
+    padding: 20px;
+    width: 900px;
+}
+
+
 img{
     height: 20rem;
     width: fit-content;
